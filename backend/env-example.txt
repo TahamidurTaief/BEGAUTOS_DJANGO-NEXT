@@ -1,0 +1,43 @@
+JTRO_DEBUG="True"
+JTRO_ENVIRONMENT="dev" # dev, production
+JTRO_SECRET_KEY="django-insecure-nf%y9rx%oz(-f4es0n0+%^v1s0c5w^ow4x_#p995kmktfxe6jw"
+JTRO_ALLOWED_HOSTS="*"
+JTRO_DJANGO_ADMIN_PATH=""
+JTRO_LOGGER="OFF"
+JTRO_DJANGO_LOG_LEVEL="DEBUG"
+JTRO_BASE_URL="*"
+
+JTRO_DEV_DATABASE="postgres"
+JTRO_DEV_DATABASE_ENGINE="django.db.backends.postgresql_psycopg2"
+JTRO_DEV_DATABASE_NAME=""
+JTRO_DEV_DATABASE_USER=""
+JTRO_DEV_DATABASE_PASSWORD=""
+JTRO_DEV_DATABASE_HOST="localhost"
+JTRO_DEV_DATABASE_PORT="5432"
+
+JTRO_DATABASE="postgres"
+JTRO_DATABASE_ENGINE="django.db.backends.postgresql_psycopg2"
+JTRO_DATABASE_NAME=""
+JTRO_DATABASE_USER=""
+JTRO_DATABASE_PASSWORD=""
+JTRO_DATABASE_HOST="localhost"
+JTRO_DATABASE_PORT="5432"
+
+JTRO_SSL_ENABLED="False"
+
+EMAIL_HOST_USER="example@gmail.com"
+EMAIL_HOST_PASSWORD="password"
+
+# https://www.whoisxmlapi.com/
+WHO_IS_XML_API_KEY=""
+
+# FIREBASE
+FIREBASE_ADMIN_SDK_KEY_PATH="/home/user/application/serviceAccountKey.json"
+FIREBASE_API_KEY_PATH="/home/user/application/firebaseAPIKey.json"
+
+# https://www.maxmind.com/
+# GEOIP
+GEOIP_PATH='/home/user/application/GeoLite2City/GeoLite2City.mmdb'
+
+# EXPLOIT KEYWORDS
+EXPLOIT_KEYWORDS="/home/user/application/exploit_keywords.txt"

@@ -1,0 +1,189 @@
+@import "tailwindcss";
+:root {
+  --background: #08080a;
+  --foreground: #171717;
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+.header {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 8.1%,
+    rgba(0, 0, 0, 0.8) 15.5%,
+    rgba(0, 0, 0, 0.8) 22.5%,
+    rgba(0, 0, 0, 0.78) 29%,
+    rgba(0, 0, 0, 0.73) 35.3%,
+    rgba(0, 0, 0, 0.67) 41.2%,
+    rgba(0, 0, 0, 0.6) 47.1%,
+    rgba(0, 0, 0, 0.52) 52.9%,
+    rgba(0, 0, 0, 0.44) 58.8%,
+    rgba(0, 0, 0, 0.33) 64.7%,
+    rgba(0, 0, 0, 0.22) 71%,
+    rgba(0, 0, 0, 0.12) 77.5%,
+    rgba(0, 0, 0, 0.05) 84.5%,
+    rgba(0, 0, 0, 0.01) 91.9%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* Responsive container utilities */
+.container-responsive {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.arrow-down {
+  padding: 5px;
+  border-radius: 37px;
+  background: rgba(255, 255, 255, 0.19);
+  backdrop-filter: blur(26.5px);
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.transform-custom {
+  transform: translateX(120px) translateY(-15rem);
+}
+
+@media (max-width: 768px) {
+  .transform-custom {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@media (min-width: 1920px) {
+  .container-responsive {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Responsive text utilities */
+.text-responsive-sm {
+  font-size: 0.875rem;
+}
+.text-responsive-base {
+  font-size: 1rem;
+}
+.text-responsive-lg {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .text-responsive-sm {
+    font-size: 1rem;
+  }
+  .text-responsive-base {
+    font-size: 1.125rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-responsive-sm {
+    font-size: 1.125rem;
+  }
+  .text-responsive-base {
+    font-size: 1.25rem;
+  }
+  .text-responsive-lg {
+    font-size: 1.5rem;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px) translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px) translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.svg-container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid white;
+  height: 180px; /* Tailwind h-45 = 11.25rem */
+  width: 100%;
+  cursor: pointer;
+}
