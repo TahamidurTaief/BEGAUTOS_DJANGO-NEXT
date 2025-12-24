@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         hostname: "127.0.0.1",
         pathname: "/media/**",
       },
+      {
+        protocol: "https",
+        hostname: "begautos.passmcq.com",
+        pathname: "/media/**",
+      },
     ],
   },
   // async redirects() {
