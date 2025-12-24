@@ -13,7 +13,8 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("JTRO_SECRET_KEY")
+# SECRET_KEY = os.environ.get("JTRO_SECRET_KEY")
+SECRET_KEY = "django-insecure-nf%y9rx%oz(-f4es0n0+%^v1s0c5w^ow4x_#p995kmktfxe6jw"
 
 # SECURITY WARNING: define the correct hosts in production!
 # ALLOWED_HOSTS = os.environ.get('JTRO_ALLOWED_HOSTS').split(',')
