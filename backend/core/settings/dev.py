@@ -12,14 +12,24 @@ INSTALLED_APPS = INSTALLED_APPS + [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 # if os.environ.get('JTRO_DEV_DATABASE') == "postgres":
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': os.environ.get('JTRO_DEV_DATABASE_ENGINE'),
+    #         'NAME': os.environ.get('JTRO_DEV_DATABASE_NAME'),
+    #         'USER': os.environ.get('JTRO_DEV_DATABASE_USER'),
+    #         'PASSWORD': os.environ.get('JTRO_DEV_DATABASE_PASSWORD'),
+    #         'HOST': os.environ.get('JTRO_DEV_DATABASE_HOST'),
+    #         'PORT': os.environ.get('JTRO_DEV_DATABASE_PORT'),
+    #     }
+    # }
 #     DATABASES = {
 #         'default': {
-#             'ENGINE': os.environ.get('JTRO_DEV_DATABASE_ENGINE'),
-#             'NAME': os.environ.get('JTRO_DEV_DATABASE_NAME'),
-#             'USER': os.environ.get('JTRO_DEV_DATABASE_USER'),
-#             'PASSWORD': os.environ.get('JTRO_DEV_DATABASE_PASSWORD'),
-#             'HOST': os.environ.get('JTRO_DEV_DATABASE_HOST'),
-#             'PORT': os.environ.get('JTRO_DEV_DATABASE_PORT'),
+#             'ENGINE': "django.db.backends.postgresql_psycopg2",
+#             'NAME': 'db_begautos',
+#             'USER': "bautos",
+#             'PASSWORD': "Jca2y90Z$2",
+#             'HOST': "localhost",
+#             'PORT': "5432",
 #         }
 #     }
 # else:
